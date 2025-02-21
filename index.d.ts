@@ -13,4 +13,4 @@ export type WaitGroup = {
  * Creates a new WaitGroup that limits concurrent tasks
  * @param limit - Maximum number of concurrent tasks
  */
-export function newWaitGroup(limit: number): WaitGroup;
+export default function newWaitGroup(limit: number): WaitGroup;

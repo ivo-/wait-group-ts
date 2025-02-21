@@ -1,6 +1,6 @@
 {
 	"name": "wait-group-ts",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "WaitGroup in TypeScript",
 	"license": "MIT",
 	"repository": "https://github.com/ivo-/wait-group-ts",
