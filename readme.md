@@ -1,6 +1,6 @@
 # wait-group-ts
 
-> WaitGroup in TypeScript
+> WaitGroup for JavaScript/TypeScript
 
 ## Install
 
