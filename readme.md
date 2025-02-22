@@ -18,17 +18,17 @@ const wg = newWaitGroup(10);
 
 // Task 1
 (async () => {
-	await wg.add();
-	try {
-		// Do task 1
-	} finally {
-		wg.done();
-	}
+  await wg.add();
+  try {
+    // Do task 1
+  } finally {
+    wg.done();
+  }
 })() ;
 
 // Task 2
 (async () => {
-	await wg.add();
+  await wg.add();
   try {
     // Do task 2
   } finally {
@@ -47,15 +47,15 @@ import newWaitGroup from 'wait-group-ts';
 const wg = newWaitGroup(10); 
 
 for (let i = 0; i < 100; i++) {
-	(async () => {
-		await wg.add();
-		try {
+  (async () => {
+    await wg.add();
+    try {
       console.log(`Processing task ${i}`);
       await new Promise(resolve => setTimeout(resolve, 100));
-		} finally {
-			wg.done();
-		}
-	})();
+    } finally {
+      wg.done();
+    }
+  })();
 }
 
 await wg.wait();
